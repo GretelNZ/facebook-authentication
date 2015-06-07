@@ -42,4 +42,5 @@ Rails.application.configure do
   # Set environment secrets
   ENV['ORIGIN'] = 'http://localhost:8080'
   ENV['OAUTH_CALLBACK'] = 'http://127.0.0.1:3000/access_token'
+
 end

@@ -1,3 +1,6 @@
+require 'oauth'
+require 'yaml'
+
 TWITTER = OAuth::Consumer.new(
   Rails.application.secrets.twitter_consumer_key,
   Rails.application.secrets.twitter_consumer_secret,

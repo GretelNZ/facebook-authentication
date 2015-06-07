@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'request_token', to: 'tokens#request_token'
   get 'access_token', to: 'tokens#access_token'
 
+  match '*all', to: 'application#index', via: [:get]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
