@@ -38,4 +38,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Set environment secrets
+  ENV['ORIGIN'] = 'http://localhost:8080'
+  ENV['OAUTH_CALLBACK'] = 'http://127.0.0.1:3000/access_token'
 end
